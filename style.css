@@ -1,0 +1,46 @@
+body {
+  background:#f4f6ff;
+  font-family:Arial;
+}
+
+.box {
+  width:330px;
+  margin:50px auto;
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+}
+
+h1 { text-align:center; color:#4f46e5; }
+
+input {
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+}
+
+button {
+  width:100%;
+  padding:10px;
+  background:#4f46e5;
+  color:white;
+  border:none;
+  border-radius:6px;
+}
+
+.tabs button {
+  width:48%;
+  margin:5px 1%;
+}
+
+.captcha {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#eee;
+  padding:8px;
+}
+
+.check {
+  font-size:14px;
+}
