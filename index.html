@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<title>Edureels | खाते</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h1>Edureels</h1>
+
+  <div class="tabs">
+    <button onclick="showRegister()">खाते तयार करा</button>
+    <button onclick="showLogin()">लॉगिन अकाउंट</button>
+  </div>
+
+  <!-- REGISTER -->
+  <div id="register">
+    <input id="ruser" placeholder="युजरनेम">
+    <input id="rpass" type="password" placeholder="पासवर्ड">
+    <input id="rcpass" type="password" placeholder="कन्फर्म पासवर्ड">
+
+    <div class="captcha">
+      <span id="captchaText"></span>
+      <button onclick="generateCaptcha()">↻</button>
+    </div>
+
+    <input id="captchaInput" placeholder="कॅपच्या टाका">
+
+    <label class="check">
+      <input type="checkbox" id="confirmCheck">
+      मी माहिती कन्फर्म करतो
+    </label>
+
+    <button onclick="register()">Register</button>
+    <p id="rmsg"></p>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="login" style="display:none">
+    <input id="luser" placeholder="युजरनेम">
+    <input id="lpass" type="password" placeholder="पासवर्ड">
+    <button onclick="login()">Login</button>
+    <p id="lmsg"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
